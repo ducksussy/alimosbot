@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+html, body {
+  color: white;
+  background-color: #2f3136;
+  font-family: 'Lexend Deca';
+  margin: 0;
+  padding: 0;
+
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+h1 {
+  font-size: 6rem;
+  margin: 0;
+  padding: 0;
+}
+
+h3 {
+  font-size: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.arrow {
+  position: absolute;
+  bottom: 20px;
+  font-size: 3rem;
+  animation: scroll-down 1s infinite;
+}
+
+.panel-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.panel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  width: 400px;
+  height: 400px;
+  background-color: #36393f;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.panel:hover {
+  transform: scale(1.05);
+}
+
+.panel img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+}
+
+.panel h4 {
+  font-size: 1.5rem;
+  margin: 20px 0 10px 0;
+}
+
+.panel p {
+  font-size: 1rem;
+  margin: 0 20px;
+  text-align: center;
+}
+
+@keyframes scroll-down {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
